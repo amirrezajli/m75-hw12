@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>editable</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body>
+		<div class="container p-5">
+			<div class="mt-5">
+				<div class="input-group mb-3 shadow-lg">
+					<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#userModal">Add User</button>
+					<label class="input-group-text ms-2" for="">search</label>
+					<input id="searchBox" type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+				  </div>
+				<!-- // -->
+				<table class="table table-bordered table-hover shadow-lg" id="table">
+					<thead>
+						<tr>
+							<th>ID</th>
+                            <th onclick="sortTable(this)" id="hName">name</th>
+                            <th onclick="sortTable(this)" id="hFamily">family</th>
+                            <th onclick="sortTable(this)" id="hBirthDay">birthDay</th>
+                            <th onclick="sortTable(this)" id="hMath">mathGraide</th>
+                            <th onclick="sortTable(this)" id="hSocialStudies">socialStudies</th>
+                            <th onclick="sortTable(this)" id="hPersian">persian</th>
+							<th class="w-25">Actions</th>
+						</tr>
+					</thead>
+					<tbody id="table-body"></tbody>
+				</table>
+			</div>
+		</div>
+
+		<!-- Modal -->
+		<div class="modal fade" id="userModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="userModalLabel">Save User</h5>
+					</div>
+					<div class="modal-body">
+						<form class="form px-2" autocomplete="off">
+							<div class="form-group mb-4">
+								<label for="name">First Name</label>
+								<input type="text" name="name-error" id="name" class="form-control" />
+								<div id="name-error" class="error"></div>
+							</div>
+							<div class="form-group mb-4">
+								<label for="family">Last Name</label>
+								<input type="text" name="family-error" id="family" class="form-control" />
+								<div id="family-error" class="error"></div>
+							</div>
+							
+                            <div class="form-group mb-4">
+                                <label>birthday</label>
+                                <input type="date" id="birthday" class="form-control " />
+                            </div>
+                            <div>
+                                <label>mathGraide</label>
+                                <input type="text" id="Math" class="form-control">
+                            </div>
+                            <div>
+                                <label>socialStudies</label>
+                                <input type="text" id="socialStudies" class="form-control">
+                            </div>
+                            <div>
+                                <label>persian</label>
+                                <input type="text" id="persian" class="form-control">
+                            </div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button id="modalSubmitBtn" type="button" class="btn btn-primary" onclick="onFormSubmit()" >Save</button>
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="closeModal()">cansel</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"
+		></script>
+		<script src="./script.js"></script>
+	</body>
+</html>

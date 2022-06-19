@@ -1,0 +1,189 @@
+.contaner {
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-inlineBlock {
+    display: inline-block;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-start {
+    text-align: start;
+}
+
+.text-end {
+    text-align: end;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-space-around {
+    justify-content: space-around;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.justify-space-evenly {
+    justify-content: space-evenly;
+}
+
+
+.align-center {
+    align-items: center;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.border-1 {
+    border: 1px solid $dark;
+}
+
+.border-2 {
+    border: 2px solid $dark;
+}
+
+.border-3 {
+    border: 3px solid $dark;
+}
+
+.border-rounded {
+    border-radius: 5%;
+}
+
+.border-circle {
+    border-radius: 50%;
+}
+
+.btn-violet {
+    background-color: $violet;
+    color: $white;
+    border-radius: 39px;
+    width: 134px;
+    height: 30px;
+    border: none;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.btn-green-s {
+    background-color: $green-100;
+    color: $white;
+    border-radius: 28px;
+    width: 190px;
+    height: 46px;
+    font-size: larger;
+    border: none;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.btn-green-m {
+    background-color: $green-100;
+    color: $white;
+    border-radius: 28px;
+    width: 224px;
+    height: 56px;
+    font-size: larger;
+    border: none;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.btn-green-l {
+    background-color: $green-100;
+    color: $white;
+    border-radius: 28px;
+    width: 252px;
+    height: 56px;
+    font-size: larger;
+    font-weight: 500;
+    border: none;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.opacity {
+    opacity: 0.44;
+}
+
+.hover {
+    cursor: pointer;
+}
+
+.text-muted {
+    color: $gray-600;
+}
+
+.text-dark {
+    color: $dark;
+}
+
+.h-green {
+    color: $green-100;
+}
+
+.h-violet {
+    color: $violet;
+}
+
+.h-orange {
+    color: $yellow;
+}
+.text-violet {
+    color: $violet;
+}
+.fs-l{
+    font-size: large;
+}
+.fs-xl{
+    font-size: larger;
+}
+.fw-b{
+font-weight: bold;
+}
